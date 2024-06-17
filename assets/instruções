@@ -1,0 +1,14 @@
+.iloc[y,0] = cpf
+.iloc[y,1] = total de acertos
+.iloc[y,2] = matematica
+.iloc[y,3] = portugues
+.iloc[y,4] = quimica
+.iloc[y,5] = histopria
+.iloc[y,6] = geografia
+.iloc[y,7] = fisica
+.iloc[y,8] = biologia
+.iloc[y,9] = filosofia-sociologia
+
+
+
+

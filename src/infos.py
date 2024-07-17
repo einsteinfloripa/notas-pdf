@@ -1,6 +1,6 @@
 import pandas as pd
 
-infos = './assets/alunos_infos_2024 - Respostas ao formulário 1.csv'
+infos = './assets/alunos_infos.csv'
 df_infos = pd.read_csv(infos,dtype={'CPF': str})
 linhas = df_infos.shape[0]
 
@@ -13,4 +13,6 @@ for l in range(linhas):
 def printDict():
     for aluno in alunos_infos:
         print(aluno,':',alunos_infos[aluno])
+
+printDict()
 

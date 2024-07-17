@@ -123,6 +123,14 @@ celerybeat.pid
 
 # Environments
 .env
+.virtual-environment
+env/
+virtual-environment/
+ENV/
+env.bak/
+virtual-environment.bak/
+
+.env
 .venv
 env/
 venv/
@@ -162,3 +170,4 @@ cython_debug/
 #.idea/
 
 pdfoutput*
+assets*

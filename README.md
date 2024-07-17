@@ -10,7 +10,7 @@ O projeto foi feito com o objetivo de gerar relatórios em pdf de simulados real
 
 ## Primeiros Passos
 
-### Dependencias
+### Dependência
 
 Para instalar as depedencias do projeto, utilize :
 ```shell
@@ -36,11 +36,4 @@ $ pip install -r ./requirements/requirements.txt
 *  Uma planilha com o ranking dos alunos nomeada "ranking.csv" que segue o exemplo: [ranking.csv](https://docs.google.com/spreadsheets/d/1lqL_7Mqi-RMFUh3u_6Xj93lIpVLdXDy-YPC7C-SwyVM/edit?usp=sharing) - Essa planilha pode ser gerada pelo [relatorio-provasPDF](https://github.com/einsteinfloripa/relatorio-provasPDF)  -> 
 
 
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
 

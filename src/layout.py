@@ -1,10 +1,13 @@
 #CODIGO GERADO PELO CHATGPT:
 from reportlab.lib.pagesizes import A4
-from reportlab.pdfgen import canvas
+
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Image
+
+
 # Função para criar um relatório PDF
+
 
 média_geral ={
     "matemática":4.7,
@@ -16,11 +19,20 @@ média_geral ={
     "biologia":2.5,
     "filo-soci":1.14,
     "total_média":23.5
-}
+}\
+    
+
 def create_report(data, filename):
     pdf = SimpleDocTemplate(filename, pagesize=A4)
     styles = getSampleStyleSheet()
     elements = []
+    
+    #adicionando imagem
+    image = Image("./assets/udesc.png")
+    image.drawHeight = 150  # altura da imagem
+    image.drawWidth = 200   # largura da imagem
+    image.hAlign = 'CENTER' # alinha a imagem ao centro
+    elements.append(image)
     
     # Título
     
@@ -29,7 +41,6 @@ def create_report(data, filename):
         ["Nome", data['name']],
         ["CPF", data['cpf']],
     ]
-    
     table = Table(student_info, colWidths=[100, 400])
     table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (1, 0), colors.darkblue),
